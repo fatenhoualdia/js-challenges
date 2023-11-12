@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const squares = document.querySelectorAll(".square");
-    const divElement = document.getElementById("footerBoard")
+    const divElement = document.getElementById("board")
 
     function getRandomColor() {
         const letters = "0123456789ABCDEF"
