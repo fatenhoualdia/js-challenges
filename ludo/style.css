@@ -1,29 +1,56 @@
-table {
-    border-collapse: collapse;
-    width: 500px;
-    height: 500px;
-    margin: auto;
-}
-td{
-    border: 1px solid black;
+body {
+    font-family: Arial, sans-serif;
     text-align: center;
-    vertical-align: middle;
 }
-caption{
-    margin: 20px 0px;
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
 }
-.red {
+
+caption {
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    transition: background-color 0.3s ease;
+}
+
+/* Define specific background colors for different regions */
+td[bgcolor="red"] {
     background-color: red;
 }
 
-.yellow {
+td[bgcolor="yellow"] {
     background-color: yellow;
 }
 
-.blue {
+td[bgcolor="green"] {
+    background-color: green;
+}
+
+td[bgcolor="blue"] {
     background-color: blue;
 }
 
-.green {
-    background-color: green;
+/* Change the background color on hover */
+table:hover td[bgcolor="red"] {
+    background-color: lightcoral;
+}
+
+table:hover td[bgcolor="yellow"] {
+    background-color: lightyellow;
+}
+
+table:hover td[bgcolor="green"] {
+    background-color: lightgreen;
+}
+
+table:hover td[bgcolor="blue"] {
+    background-color: lightblue;
 }
