@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+
+        <title>Forms with JS</title>
+
+</head>
+<body>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+  <form>
+    <div id="firstnameSection">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      <span>Enter your first name</span>
+    </div>
+
+    <div id="lastnameSection">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      <span>Enter your last name</span>
+    </div>
+      
+    <div id="country">
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <option value="" selected disabled>Select an Option</option> 
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="tn">Tunisia</option>
+    </select>
+    <span>Please select your country</span>
+  </div>
+  
+  <div>
+    <button type="submit">Submit</button>
+    <button type="reset" id="resetBtn">Reset</button>
+  </div>
+  </form>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
