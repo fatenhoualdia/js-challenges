@@ -25,7 +25,19 @@ form span {
     display: none;
 }
 
-input[type=text], select {
+
+form#loginForm {
+  display:none;
+}
+
+form#signupForm {
+  display:block;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -50,3 +62,10 @@ input[type=text], select {
     background-color: #45a049;
   }
   
+
+.choice {
+  margin-top:20px;
+  display:flex;
+  gap: 15px;
+  align-items: flex-end;
+}

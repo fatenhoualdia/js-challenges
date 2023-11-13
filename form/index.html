@@ -6,13 +6,22 @@
         <link rel="stylesheet" href="./style.css">
 
         <title>Forms with JS</title>
-
 </head>
 <body>
 
 <h3>Using CSS to style an HTML Form</h3>
-
-  <form>
+  <div class="choice">
+    <div>
+      <label for="signUp">Sign Up</label>
+      <input type="radio" checked name="signInOrSignUp" id="signUp" />
+    </div>
+    
+    <div>
+      <label for="login">Login</label>
+      <input type="radio" name="signInOrSignUp" id="login" />
+    </div>
+  </div>
+  <form id="signupForm">
     <div id="firstnameSection">
       <label for="fname">First Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
@@ -40,6 +49,24 @@
   <div>
     <button type="submit">Submit</button>
     <button type="reset" id="resetBtn">Reset</button>
+  </div>
+  </form>
+
+  <form id="loginForm">
+    <div id="firstnameSection">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your email..">
+      <span>Enter your Email</span>
+    </div>
+
+    <div id="lastnameSection">
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Your password..">
+      <span>Enter your password</span>
+    </div>
+  
+  <div>
+    <button type="submit">Login</button>
   </div>
   </form>
 

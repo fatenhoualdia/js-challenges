@@ -1,16 +1,20 @@
-const form = document.querySelector("form")
+const signupForm = document.querySelector("#signupForm")
+const loginForm = document.querySelector("#loginForm")
 const spans = document.querySelectorAll("span")
+const signupBtn = document.querySelector("#signUp")
+const loginBtn = document.querySelector("#login")
+
 
 function resetForm () {
     console.log("The form is resetted!")
 }
 
-form.addEventListener("reset", resetForm)
+signupForm.addEventListener("reset", resetForm)
 
-form.addEventListener("submit", function (event) {
+signupForm.addEventListener("submit", function (event) {
     event.preventDefault() // this line is preventing the default behaviour of the form when its submitted(refreshing the page)
 
-    const elements = form.elements
+    const elements = signupForm.elements
 
     const fname = elements['firstname']
     const lname = elements['lastname']
@@ -49,4 +53,15 @@ form.addEventListener("submit", function (event) {
         console.log("Is not verified! you should correct your data")
     }
 
+})
+
+signupBtn.addEventListener("click", () => {
+    signupForm.style.display = 'block'
+    loginForm.style.display = 'none'
+})
+
+
+loginBtn.addEventListener("click", () => {
+    signupForm.style.display = 'none'
+    loginForm.style.display = 'block'
 })
