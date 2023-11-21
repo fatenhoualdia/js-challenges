@@ -9,26 +9,57 @@
 <body>
     <div class="center-div">
         <h1>Log in to Designer News</h1>
-        <label for="name" id="la"> Username</label> <br> 
-        <input type="text" id="username" placeholder="username">
-      
-<br><br>
 
-<div class="password-container">
-    <label for="name" id="labl">Password </label> <br> 
+        <label for="log-in">
+            <input type="checkbox" id="log-in"> Log In
+        </label>
+        <br><br>
+        <label for="sign-up">
+            <input type="checkbox" id="sign-up"> Sign Up
+        </label>
+        <br><br>
 
-    <input type="password" id="password" placeholder="Password">
+    
+        <div id="login-section">
+            <label for="name" id="la"> Username</label> <br> 
+            <input type="text" id="username" placeholder="username">
+            <br><br>
 
-    <img src="eye-close.png" id="toggle-password" class="toggle-password" alt="Toggle Password Visibility">
+            <div class="password-container">
+                <label for="name" id="labl">Password </label> <br> 
+                <input type="password" id="password" placeholder="Password">
+                <img src="eye-close.png" id="toggle-password" class="toggle-password" alt="Toggle Password Visibility">
+            </div>
+            <br><br>
 
-  </div>
-  <br> <br>
-  
-   <div id="btn">
-        <button class="blue-square-button" id="signup-button">SIGN UP</button>
+       
+            <label for="remember-me">
+                <input type="checkbox" id="remember-me"> Remember Me
+            </label>
+            <br><br>
 
-        <button class="blue-square-button" id="login-button">LOG IN</button>
-    </div>
+            <div id="btn">
+                <button class="blue-square-button" id="signup-button">SIGN UP</button>
+            </div>
+        </div>
+
+       
+        <div id="additional-fields" style="display: none;">
+            <label for="first-name">First Name</label><br>
+            <input type="text" id="first-name" placeholder="First Name"><br><br>
+
+            <label for="last-name">Last Name</label><br>
+            <input type="text" id="last-name" placeholder="Last Name"><br><br>
+
+            <label for="country">Country</label><br>
+  <select id="country">
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+                <option value="Canada">Canada</option>
+                <option value="France">France</option>
+            </select>        </div>
+            <button class="blue-square-button" id="login-button">LOG IN</button>
+
     </div>
       
     <script src="./script.js"></script>

@@ -119,5 +119,38 @@
   
   
   
- 
+  #additional-fields {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#additional-fields label,
+#additional-fields select,
+#additional-fields input[type="text"] {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#additional-fields select,
+#additional-fields input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #b9a3a3;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#additional-fields select {
+    cursor: pointer;
+}
+
+#additional-fields input[type="text"]:focus,
+#additional-fields select:focus {
+    outline: none;
+    border-color: #555;
+}
+
   
