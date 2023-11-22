@@ -1,0 +1,22 @@
+
+ a {
+    color: var(--gray85);
+    font-weight: 100;
+  
+    justify-content: flex-end;
+    text-align: center;
+}
+pre{
+    overflow-x: auto;
+    margin: 1.5em 0 3em;
+    padding: 20px;
+    background-color: rgb(224, 224, 216);
+    max-width: 25%;
+    color: var(--gray85);
+    font-size: 1.4rem;
+    line-height: 1.5em;
+    
+}
+p{
+    font-size: 1.5rem;
+}

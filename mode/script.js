@@ -34,4 +34,19 @@ h2Element.addEventListener("click", () => {
 })
 
 
+  // Get the time element
+  const timeElement = document.querySelector('.post-full-meta-date');
+  
+  // Get the datetime attribute value
+  const datetimeAttributeValue = timeElement.getAttribute('datetime');
+  
+  // Convert the datetime string to a Date object
+  const date = new Date(datetimeAttributeValue);
+
+  // Format the date
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = date.toLocaleDateString(undefined, options);
+  
+  // Display the formatted date
+  timeElement.textContent = formattedDate;
 
