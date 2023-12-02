@@ -30,7 +30,16 @@ like this:
 
 function formatIndex () {
  // this function should return a new array
+
+
+return surahs.map((element) => {
+   
+ return{ ...element, index: parseInt(element.index)}
+ 
+})
+
 }
+console.log(formatIndex ())
 
 /* 
 TODO: add the surah_link to every object in the surahs array
@@ -64,4 +73,12 @@ exp:
 
 function addSurahUrl () {
     // this function should return a new array
+
+
+    return surahs.map((surah) => {
+        const surahIndex = parseInt(surah.index)
+        const surahLink = `https://raw.githubusercontent.com/semarketir/quranjson/master/source/surah/surah_${surahIndex}.json`
+        return { ...surah, surah_link: surahLink }
+    })
 }
+console.log(addSurahUrl ())

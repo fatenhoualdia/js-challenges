@@ -19,14 +19,15 @@
         const btn = document.querySelector("button")
         btn.addEventListener("click",()=> {
             const total = getSum(Number(firstNumber.value), Number(secondNumber.value))
-            if(isNaN(total)) {
-                h2.innerText = "getSum function not correct!"
-                h2.style.color = "#f00"
-            }
-            else
-            h2.innerText = total
-            h2.style.color = "#000"
-        })
+        
+        if (isNaN(total)) {
+                h2.innerText = "getSum function not correct!";
+                h2.style.color = "red"; // Try using color names or keywords
+            } else {
+                h2.innerText = `The sum is: ${total}`;
+                h2.style.color = "#0f0"; // Try using color names or keywords
+        }
+    })
     </script>
 </body>
 </html>

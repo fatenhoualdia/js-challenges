@@ -1,11 +1,11 @@
 /*
 TODO! complete this helloWorld function to return the string "Hello World!"
 */
-// function helloWorld() {
-//     return "Hello World!"
+function helloWorld() {
+    return "Hello World!"
 
-// }
-// helloWorld()
+}
+helloWorld()
 
 //**********************************
 
@@ -19,12 +19,17 @@ TODO! complete this helloWorld function to return the string "Hello World!"
 
 // let res = sum( 5,2,1,5,10,7) 
 // console.log(res)
- function add( args){
-for  ( const element of args){
-    console.log(args)
-}
- }
- let arr = add([1,2,3])
+
+
+
+
+
+//  function add( args){
+// for  ( const element of args){
+//     console.log(args)
+// }
+//  }
+//  let arr = add([1,2,3])
 
 
 
